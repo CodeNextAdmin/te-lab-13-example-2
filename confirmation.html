@@ -17,5 +17,19 @@
     <h1>
       Thanks for sending us your private information!
     </h1>
+
+    <p id="confirmation">
+      Confirmation Statment
+    </p>
+
+    <script>
+      window.onload = function() {
+        let color = localStorage.getItem("favColor");
+        let pet = localStorage.getItem("favPet");
+        console.log(`Your favorite pet is ${color} and your favorite pet is ${pet}`)
+       // document.querySelector('#confirmation').innerHTML(`Your favorite pet is ${color} and your favorite pet is ${pet}`)
+        
+      };
+    </script>
   </body>
 </html>
