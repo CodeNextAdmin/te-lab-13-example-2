@@ -28,7 +28,7 @@
     </div>
 
     <div class="example-row">
-      <form  method="post" action="confirmation.html">
+      <form  action="/confirmation.html" onsubmit="saveData()">
         My favourite color is:
         <input type="text" />
         My pet name is:
@@ -45,5 +45,19 @@
         <input type="submit" value="Save" />
       </form>
     </div>
+    
+    <script>
+    
+    window.onload = function() {
+     
+    //localStorage.setItem("storageName",getInput);
+}
+      
+      function  saveData(){
+        
+        alert("saved!")
+      }
+    
+    </script>
   </body>
 </html>
