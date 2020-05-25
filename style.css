@@ -18,11 +18,11 @@ h1 {
 }
 input{
   
-  display:block;
+  display:inline;
 }
 
 .choice-label{
-  position:relative;
+   
   margin-top:5px;
   display:inline-block ;
   margin-top:5px;
