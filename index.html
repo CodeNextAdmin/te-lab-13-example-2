@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Hello!</title>
-    
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
-    <h1>Hi there!</h1>
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
+    <h1>
+      Input examples
+    </h1>
+    <div class="example-row">
+      <!-- a text and password input example w/ labels-->
+        <label for="username">Username:</label>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+        <br />
+        <input type="text" id="username" name="username" /><br />
+        <label for="pwd">Password:</label><br />
+        <input type="password" id="pwd" name="pwd" />
+       
+    </div>
+    
+    
+       <div class="example-row">
+      <form>
+  My favourite food is:
+  <input type="text">
+  My pet name is:
+  <input type="text">
+  My favorite pizza is:
+  <input type="radio" name="pizza" checked>
+  Dog
+  <input class="radio-btn" type="radio" name="pizza">
+  Cat
+  <input type="radio" name="pizza">
+  Rabbit
+  <input type="submit" value="Add to Database">  
+</form>
+    </div>
   </body>
 </html>
