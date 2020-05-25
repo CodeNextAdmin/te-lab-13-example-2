@@ -35,11 +35,17 @@
         <input type="text" id="pet-name" value="" />
         <br />
         <p class="choice-label">My favorite pizza is:</p>
-        <input  class="radio-btn" type="radio" name="pizza" checked value="cheese" />
+        <input
+          class="radio-btn"
+          type="radio"
+          name="pizza"
+          checked
+          value="cheese"
+        />
         <p class="choice-label">Cheese</p>
         <input class="radio-btn" type="radio" name="pizza" value="pepperoni" />
         <p class="choice-label">Pepperoni</p>
-        <input  class="radio-btn" type="radio" name="pizza" value="veggie" />
+        <input class="radio-btn" type="radio" name="pizza" value="veggie" />
         <p class="choice-label">Veggies</p>
         <br />
         <input type="submit" value="Save" />
@@ -49,11 +55,11 @@
     <script>
       window.onload = function() {
         //localStorage.setItem("storageName",getInput);
-         console.log("ssssssdsd "  );  
-         let pizzaChoices = document.querySelectorAll(".radio-btn");
-         console.log(pizzaChoices)
+        console.log("ssssssdsd ");
+        let pizzaChoices = document.querySelectorAll(".radio-btn");
+        console.log(pizzaChoices);
         for (var pizza of pizzaChoices) {
-          console.log(pizza.value );  
+          console.log(pizza.value);
         }
       };
 
@@ -66,18 +72,17 @@
 
         let pizzaChoices = document.querySelectorAll('input[name="pizza"]');
 
-         let chosenPizza = ''
+        let chosenPizza = "";
 
-        
-            for (const p of pizzaChoices) {
-                if (p.checked) {
-                    chosenPizza = p.value;
-                    break;
-                }
-            }
-            alert(chosenPizza);
-        
-        localStorage.setItem("pizza", chosenPizza)
+        for (const p of pizzaChoices) {
+          if (p.checked) {
+            chosenPizza = p.value;
+            break;
+          }
+        }
+        alert(chosenPizza);
+
+        localStorage.setItem("pizza", chosenPizza);
       }
     </script>
   </body>
