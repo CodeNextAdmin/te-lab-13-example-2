@@ -28,49 +28,50 @@
     </div>
 
     <div class="example-row">
-      <form  action="/confirmation.html" onsubmit="saveData()">
+      <form action="/confirmation.html" onsubmit="saveData()">
         My favourite color is:
-        <input type="text" id="favorite-color" value=""/>
+        <input type="text" id="favorite-color" value="" />
         My pet name is:
-        <input type="text" id="pet-name" value=""/>
-        <br/>
-       <p class="choice-label">  My favorite pizza is:</p> 
-        <input type="radio" name="pizza" checked value="cheese"/>
+        <input type="text" id="pet-name" value="" />
+        <br />
+        <p class="choice-label">My favorite pizza is:</p>
+        <input type="radio" name="pizza" checked value="cheese" />
         <p class="choice-label">Cheese</p>
-        <input class="radio-btn" type="radio" name="pizza" value="pepperoni"/>
+        <input class="radio-btn" type="radio" name="pizza" value="pepperoni" />
         <p class="choice-label">Pepperoni</p>
-        <input type="radio" name="pizza" value="veggie"/>
+        <input type="radio" name="pizza" value="veggie" />
         <p class="choice-label">Veggies</p>
-        <br/>
+        <br />
         <input type="submit" value="Save" />
       </form>
     </div>
-    
+
     <script>
-    
-    window.onload = function() {
-     
-    //localStorage.setItem("storageName",getInput);
-}
-      
-      function  saveData(){
-        
-        let fColor = document.querySelector('#favorite-color').value
-        let petName = document.querySelector('#pet-name').value
-         console.log("value: " + fColor)
-        localStorage.setItem("favColor",fColor);
-        localStorage.setItem("petName",petName);
-        
-        let pizzaChoices = document.querySelectorAll("#radio-btn")
-        
-        console.log(pizzaChoices)
-        
-       pizzaChoices.forEach(function(item) {
-  console.log(item);
-})
+      window.onload = function() {
+        //localStorage.setItem("storageName",getInput);
+         console.log("ssssssdsd "  );  
+         let pizzaChoices = document.querySelectorAll("#radio-btn");
          
+        for (var pizza of pizzaChoices) {
+          console.log("pizza "  );  
+        }
+      };
+
+      function saveData() {
+        let fColor = document.querySelector("#favorite-color").value;
+        let petName = document.querySelector("#pet-name").value;
+        console.log("value: " + fColor);
+        localStorage.setItem("favColor", fColor);
+        localStorage.setItem("petName", petName);
+
+        let pizzaChoices = document.querySelectorAll("#radio-btn");
+
+         
+
+        for (var pizza of pizzaChoices) {
+          console.log(pizza);  
+        }
       }
-    
     </script>
   </body>
 </html>
