@@ -30,9 +30,9 @@
     <div class="example-row">
       <form  action="/confirmation.html" onsubmit="saveData()">
         My favourite color is:
-        <input type="text" />
+        <input type="text" id="favorite-color" value=""/>
         My pet name is:
-        <input type="text" />
+        <input type="text" id="pet-name" value=""/>
         <br/>
        <p class="choice-label">  My favorite pizza is:</p> 
         <input type="radio" name="pizza" checked />
@@ -55,7 +55,10 @@
       
       function  saveData(){
         
-        alert("saved!")
+        let fColor = document.querySelector('#favorite-color').value
+         console.log("value: " + fColor)
+        localStorage.setItem("data",fColor);
+         
       }
     
     </script>
