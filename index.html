@@ -64,20 +64,18 @@
         localStorage.setItem("favColor", fColor);
         localStorage.setItem("petName", petName);
 
-        let pizzaChoices = document.querySelectorAll("#radio-btn");
+        let pizzaChoices = document.querySelectorAll('input[name="pizza"]');
 
          let chosenPizza = ''
 
-        for (var pizza of pizzaChoices) {
-          console.log(pizza.value);
-          
-          if (pizza.checked){
-            
-            chosenPizza = pizza.value
-            
-            alert("chosen pizza: " chosenPizza)
-          }
-        }
+        
+            for (const p of pizzaChoices) {
+                if (p.checked) {
+                    chosenPizza = p.value;
+                    break;
+                }
+            }
+            alert(chosenPizza);
         
         localStorage.setItem("pizza", chosenPizza)
       }
