@@ -25,9 +25,10 @@
     <script>
       window.onload = function() {
         let color = localStorage.getItem("favColor");
-        let pet = localStorage.getItem("favPet");
-        console.log(`Your favorite pet is ${color} and your favorite pet is ${pet}`)
-       // document.querySelector('#confirmation').innerHTML(`Your favorite pet is ${color} and your favorite pet is ${pet}`)
+        let pet = localStorage.getItem("petName");
+        let statement = `Your favorite pet is ${color} and your favorite pet is ${pet}`
+        
+        document.querySelector('#confirmation').innerHTML = statement
         
       };
     </script>
