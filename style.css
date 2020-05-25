@@ -8,6 +8,12 @@ body {
 h1 {
   color: tomato;
 }
+label{
+  
+  display:inline;
+  margin:10px;
+   
+}
 
 .example-row {
   background: seashell;
@@ -18,12 +24,14 @@ h1 {
 }
 input{
   
-  display:inline;
+  display:inline ;;
+  margin:10px;
+   
 }
 
 .choice-label{
    
-  margin-top:5px;
+  
   display:inline-block ;
   margin-top:5px;
 }
