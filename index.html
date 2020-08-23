@@ -72,7 +72,7 @@
         //localStorage.setItem("storageName",getInput);
          
         let pizzaChoices = document.querySelectorAll(".radio-btn");
-         
+        
         for (var pizza of pizzaChoices) {
           console.log(pizza.value);
         }
@@ -82,7 +82,7 @@
         let fColor = document.querySelector("#favorite-color").value;
         let petName = document.querySelector("#pet-name").value;
         
-        alert(petName)
+        
          
         localStorage.setItem("favColor", fColor);
         localStorage.setItem("petName", petName);
@@ -97,7 +97,7 @@
             break;
           }
         }
-        alert(chosenPizza);
+       
 
         localStorage.setItem("pizza", chosenPizza);
       }
